@@ -16,6 +16,8 @@ RUN mkdir -p /usr/local/nvidia/include
 RUN mkdir -p /usr/local/nvidia/lib64
 RUN cp cudnn-linux-x86_64-8.9.2.26_cuda11-archive/include/cudnn*.h /usr/local/nvidia/include
 RUN cp -P cudnn-linux-x86_64-8.9.2.26_cuda11-archive/lib/libcudnn* /usr/local/nvidia/lib64
+RUN cp cudnn-linux-x86_64-8.9.2.26_cuda11-archive/include/cudnn*.h /usr/local/cuda/include
+RUN cp -P cudnn-linux-x86_64-8.9.2.26_cuda11-archive/lib/libcudnn* /usr/local/cuda/lib64
 RUN chmod a+r /usr/local/nvidia/include/cudnn*.h /usr/local/nvidia/lib64/libcudnn*
 RUN apt-get update
 RUN apt-get install -y python3-pip

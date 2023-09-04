@@ -1,5 +1,6 @@
-url="https://developer.download.nvidia.com/compute/cudnn/secure/8.9.2/local_installers/11.x/cudnn-linux-x86_64-8.9.2.26_cuda11-archive.tar.xz?IG8kNEPqXuKs-gesoM8gvGDo8z2dLSwadZykh0ViGTOQnkrcJe03gy4sGCxxeY_6zHhiZn4VmbfRFZga9JsceeOTvYhJ2keptsVNmKm7KTTd8URVG9eS9Sbo9NALhtNsmjIbVnx5SJ58ki705VniksisOvdOeHvWZM3TqFi-zT4Pl08hRAjIrUXG4100bsxmthCdZvNmYmXiaVlCS4LQTv0=&t=eyJscyI6ImdzZW8iLCJsc2QiOiJodHRwczovL3d3dy5nb29nbGUuY29tLyJ9"
-flename="cudnn-linux-x86_64-8.9.2.26_cuda11-archive.tar.xz"
+url='https://developer.download.nvidia.com/compute/cudnn/secure/8.5.0/local_installers/11.7/cudnn-linux-x86_64-8.5.0.96_cuda11-archive.tar.xz?Y2kIM8ki_B7qHVveDBTQLKiNhfsi65DrMEcQUMp_OujBSsP71U-YCqh4vkq_Hj6eywHqb-h5WDdiR2OuAITpkR3JwrcLYIy2d4kWW6YHxF4k3FAP0be5ySiRoLdJrnv9noVzHXKZtnICSnNEVaI12U_0x6qlZxPYiCWmqAzt3Ktht7sOn3QLd7fiywYb4ivCquTgOwinH2UZAhl0CNrimfY=&t=eyJscyI6ImJzZW8iLCJsc2QiOiJodHRwczovL3d3dy5iaW5nLmNvbS8ifQ=='
+filename="cudnn-linux-x86_64-8.5.0.96_cuda11-archive.tar.xz"
+echo $filename
 # check if filename exists
 # else download
 if [ -f "$filename" ]; then
@@ -9,7 +10,7 @@ else
     echo "Downloading $filename"
     wget -P . $url -O $filename 
 fi
-folder='cudnn-linux-x86_64-8.9.2.26_cuda11-archive'
+folder='cudnn-linux-x86_64-8.5.0.96_cuda11-archive'
 if [ -d "$folder" ]; then
     echo "$folder exists."
 else 

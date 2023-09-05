@@ -9,8 +9,7 @@ RUN apt-get update --yes --quiet && DEBIAN_FRONTEND=noninteractive apt-get insta
 
 
 RUN pwd
-#RUN cp /home/long/install-script/cudnn-linux-x86_64-8.9.2.26_cuda11-archive.tar.xz .
-COPY cudnn-linux-x86_64-8.9.2.26_cuda11-archive.tar.xz .
+RUN curl "https://drive.usercontent.google.com/download?id=1_CXgI1XUKMiOOpeaXs5tsm9Wv4cIughb&export=download&authuser=0&confirm=t&uuid=413fb2b5-e345-4da9-bd2c-11f704c2e93f&at=APZUnTXS3CYUkbBpzKuHk7fs42EP:1693907525830" --output 'cudnn-linux-x86_64-8.9.2.26_cuda11-archive.tar.xz'
 RUN tar -xvf cudnn-linux-x86_64-8.9.2.26_cuda11-archive.tar.xz
 RUN mkdir -p /usr/local/nvidia/include
 RUN mkdir -p /usr/local/nvidia/lib64
@@ -27,10 +26,10 @@ RUN pip3 install tensorflow==2.12
 #CUDA 11.8
 #RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 #CUDA 11.7
-RUN pip3 install torch torchvision torchaudio
-COPY requirements.txt .
-WORKDIR .
-RUN pip3 install -r requirements.txt
+# RUN pip3 install torch torchvision torchaudio
+# COPY requirements.txt .
+# WORKDIR .
+# RUN pip3 install -r requirements.txt
 
 # install cudnn
 

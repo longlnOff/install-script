@@ -1,4 +1,4 @@
-url='https://developer.download.nvidia.com/compute/cudnn/secure/8.5.0/local_installers/11.7/cudnn-linux-x86_64-8.5.0.96_cuda11-archive.tar.xz?Y2kIM8ki_B7qHVveDBTQLKiNhfsi65DrMEcQUMp_OujBSsP71U-YCqh4vkq_Hj6eywHqb-h5WDdiR2OuAITpkR3JwrcLYIy2d4kWW6YHxF4k3FAP0be5ySiRoLdJrnv9noVzHXKZtnICSnNEVaI12U_0x6qlZxPYiCWmqAzt3Ktht7sOn3QLd7fiywYb4ivCquTgOwinH2UZAhl0CNrimfY=&t=eyJscyI6ImJzZW8iLCJsc2QiOiJodHRwczovL3d3dy5iaW5nLmNvbS8ifQ=='
+url='https://drive.usercontent.google.com/download?id=1IrQes_nRwMSHv8kWX62VU139fYvjzQ_5&export=download&authuser=0&confirm=t&uuid=86938f3e-77ea-400f-86bf-70d765aae3da&at=APZUnTWQ-MlaMC8fjcbCtgj25yJk:1693907489006'
 filename="cudnn-linux-x86_64-8.5.0.96_cuda11-archive.tar.xz"
 echo $filename
 # check if filename exists

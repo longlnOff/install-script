@@ -16,10 +16,8 @@ sudo dpkg -i cuda-repo-ubuntu2004-11-7-local_11.7.1-515.65.01-1_amd64.deb
 sudo cp /var/cuda-repo-ubuntu2004-11-7-local/cuda-*-keyring.gpg /usr/share/keyrings/
 sudo apt-get update
 sudo apt-get -y install cuda
-# Environment variables
-# sudo echo "export PATH=/usr/local/cuda-11.7/bin${PATH:+:${PATH}}">> "/home/longln/.bashrc"
-# sudo echo "export CUDA_HOME=/usr/local/cuda">> "/home/longln/.bashrc"
-# Install CUDNN 
+
+# Install libcudnn 
 wget -P . https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
 sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub

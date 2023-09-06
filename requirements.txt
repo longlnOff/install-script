@@ -41,7 +41,7 @@ networkx==3.1
 numba==0.57.1
 onnxruntime==1.15.1
 pytube==15.0.0
-pydantic==1.10.12
+PyYAML==5.4.1
 sox==1.4.1
 squeezeformer==1.0.0
 streamlit==1.26.0
@@ -64,3 +64,8 @@ tensorflow-io==0.33.0
 tensorflow-io-gcs-filesystem==0.33.0
 tensorflow-metadata==1.13.1
 tensorflow-probability==0.21.0
+typing-extensions==4.5
+pillow==7.1.0
+pytz==2020.1
+lightning
+filelock==3.3.1

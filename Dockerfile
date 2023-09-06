@@ -22,15 +22,12 @@ RUN chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 RUN apt-get update
 RUN apt-get install -y python3-pip
 RUN apt-get update && apt-get install -y sudo
-RUN pip3 install tensorflow==2.12
+
+COPY requirements.txt .
+# WORKDIR .
+RUN pip3 install -r requirements.txt
+
 #CUDA 11.8
 #RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 #CUDA 11.7
 # RUN pip3 install torch torchvision torchaudio
-# COPY requirements.txt .
-# WORKDIR .
-# RUN pip3 install -r requirements.txt
-
-# install cudnn
-
-

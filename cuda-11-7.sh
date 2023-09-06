@@ -9,9 +9,9 @@ if [ -f "$filecuda" ]; then
 else 
     echo "$filecuda does not exist."
     echo "Downloading $filecuda"
-    wget -P . https://developer.download.nvidia.com/compute/cuda/11.7.1/local_installers/cuda-repo-ubuntu2004-11-7-local_11.7.1-515.65.01-1_amd64.deb
-
+    curl "https://drive.usercontent.google.com/download?id=15s_J-DVLTGK6EiIBcNlcf0E02t3UAllU&export=download&authuser=0&confirm=t&uuid=af808d59-6629-47f9-9469-5c5d8de8e4e9&at=APZUnTW5ZjPF10KToZVs9c168xKJ:1693967264619" --output $filecuda
 fi
+
 sudo dpkg -i cuda-repo-ubuntu2004-11-7-local_11.7.1-515.65.01-1_amd64.deb
 sudo cp /var/cuda-repo-ubuntu2004-11-7-local/cuda-*-keyring.gpg /usr/share/keyrings/
 sudo apt-get update

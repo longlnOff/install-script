@@ -56,6 +56,7 @@ torchaudio==2.0.2
 torchdata==0.6.1
 torchvision==0.15.2
 torchviz==0.0.2
+torchtext==0.15.2
 tornado==6.3.2
 tqdm==4.65.0
 transformers==4.32.0

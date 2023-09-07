@@ -1,9 +1,11 @@
 accelerate
+black==23.7.0
 Chroma==0.2.0
 chroma-hnswlib==0.7.2
 chromadb==0.4.5
 fastapi==0.99.1
 ffmpeg==1.4
+filelock==3.3.1
 graphviz==0.20.1
 huggingface-hub==0.16.4
 ipykernel==6.25.0
@@ -35,11 +37,14 @@ jupyterlab-server==2.24.0
 jupyterlab-widgets==3.0.8
 keras==2.13.1
 langchain==0.0.208
+lightning==2.0.8
 librosa==0.10.0.post2
 matplotlib==3.7.2
 networkx==3.1
 numba==0.57.1
 onnxruntime==1.15.1
+pillow==7.1.0
+pytz==2020.1
 pytube==15.0.0
 PyYAML==5.4.1
 sox==1.4.1
@@ -65,7 +70,3 @@ tensorflow-io-gcs-filesystem==0.33.0
 tensorflow-metadata==1.13.1
 tensorflow-probability==0.21.0
 typing-extensions==4.5
-pillow==7.1.0
-pytz==2020.1
-lightning
-filelock==3.3.1

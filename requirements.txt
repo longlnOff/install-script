@@ -42,6 +42,7 @@ librosa==0.10.0.post2
 matplotlib==3.7.2
 networkx==3.1
 numba==0.57.1
+nltk==3.8.1
 onnxruntime==1.15.1
 pillow==7.1.0
 pytz==2020.1

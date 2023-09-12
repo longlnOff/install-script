@@ -30,5 +30,5 @@ chmod a+r /usr/local/nvidia/include/cudnn*.h /usr/local/nvidia/lib64/libcudnn*
 path_bashrc=/home/long/.bashrc
 path_bashrc=/home/longln/.bashrc
 echo "export LD_LIBRARY_PATH=''" >> $path_bashrc
-echo "export LD_LIBRARY_PATH=/usr/local/nvidia/include:$LD_LIBRARY_PATH" >> $path_bashrc
-echo "export LD_LIBRARY_PATH=/usr/local/nvidia/lib64:$LD_LIBRARY_PATH" >> $path_bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/include:$LD_LIBRARY_PATH' >> $path_bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64:$LD_LIBRARY_PATH' >> $path_bashrc

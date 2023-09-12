@@ -9,7 +9,7 @@ if [ -f "$filecuda" ]; then
 else 
     echo "$filecuda does not exist."
     echo "Downloading $filecuda"
-    curl "https://drive.usercontent.google.com/download?id=15s_J-DVLTGK6EiIBcNlcf0E02t3UAllU&export=download&authuser=0&confirm=t&uuid=af808d59-6629-47f9-9469-5c5d8de8e4e9&at=APZUnTW5ZjPF10KToZVs9c168xKJ:1693967264619" --output $filecuda
+    curl "https://drive.usercontent.google.com/download?id=15s_J-DVLTGK6EiIBcNlcf0E02t3UAllU&echo 'export=download&authuser=0&confirm=t&uuid=af808d59-6629-47f9-9469-5c5d8de8e4e9&at=APZUnTW5ZjPF10KToZVs9c168xKJ:1693967264619" --output $filecuda
 fi
 
 sudo dpkg -i cuda-repo-ubuntu2004-11-7-local_11.7.1-515.65.01-1_amd64.deb
@@ -26,3 +26,9 @@ sudo apt-get update
 sudo apt-get install -y libcudnn8=8.5.0.*-1+cuda11.7
 sudo apt-get install -y libcudnn8-dev=8.5.0.*-1+cuda11.7
 
+
+path_bashrc=/home/long/.bashrc
+path_bashrc=/home/longln/.bashrc
+echo 'export PATH=/usr/local/cuda-11.2/bin${PATH:+:${PATH}}' >> $path_bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-11.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> $path_bashrc
+echo 'export CUDA_HOME=/usr/local/cuda' >> $path_bashrc

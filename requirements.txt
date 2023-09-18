@@ -72,3 +72,4 @@ tensorflow-io-gcs-filesystem==0.33.0
 tensorflow-metadata==1.13.1
 tensorflow-probability==0.21.0
 typing-extensions==4.5
+unstructured==0.10.15

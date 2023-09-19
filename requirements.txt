@@ -88,3 +88,4 @@ torchnet
 pycodestyle
 pyflakes
 soundfile
+loguru==0.7.2

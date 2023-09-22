@@ -89,3 +89,4 @@ pycodestyle
 pyflakes
 soundfile
 loguru==0.7.2
+einops==0.6.1

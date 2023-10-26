@@ -36,7 +36,6 @@ jupyterlab-pygments==0.2.2
 jupyterlab-server==2.24.0
 jupyterlab-widgets==3.0.8
 keras==2.13.1
-langchain==0.0.208
 lightning==2.0.8
 librosa==0.10.0.post2
 matplotlib==3.7.2
@@ -59,8 +58,8 @@ torchvision==0.15.2
 torchviz==0.0.2
 torchtext==0.15.2
 tornado==6.3.2
-tqdm==4.65.0
-transformers==4.32.0
+tqdm==4.66.1
+transformers==4.34.0
 tensorboard==2.13.0
 tensorboard-data-server==0.7.1
 tensorflow==2.13.0
@@ -90,4 +89,10 @@ pyflakes
 soundfile
 loguru==0.7.2
 einops==0.6.1
-mmcv==0.4.3
+bitsandbytes==0.41.0
+datasets==2.14.5
+huggingface_hub==0.16.4
+langchain==0.0.323
+pandas==2.0.3
+peft==0.4.0
+trl==0.4.7

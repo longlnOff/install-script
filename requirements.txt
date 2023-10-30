@@ -8,9 +8,9 @@ ffmpeg==1.4
 filelock==3.3.1
 graphviz==0.20.1
 huggingface-hub==0.16.4
-ipykernel==6.25.0
-ipynb-py-convert==0.4.6
-ipython==8.12.2
+ipykernel
+ipynb-py-convert
+ipython
 ipython-genutils==0.2.0
 ipywidgets==8.1.0
 jax==0.4.13
@@ -70,7 +70,7 @@ tensorflow-io==0.33.0
 tensorflow-io-gcs-filesystem==0.33.0
 tensorflow-metadata==1.13.1
 tensorflow-probability==0.21.0
-typing-extensions==4.5
+typing-extensions
 unstructured==0.10.15
 kaldiio==2.17.2
 pypeln==0.4.9
@@ -89,10 +89,10 @@ pyflakes
 soundfile
 loguru==0.7.2
 einops==0.6.1
-bitsandbytes==0.41.0
-datasets==2.14.5
+bitsandbytes
+datasets
 huggingface_hub==0.16.4
 langchain==0.0.323
 pandas==2.0.3
-peft==0.4.0
-trl==0.4.7
+peft
+trl

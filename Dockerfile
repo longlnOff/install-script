@@ -1,5 +1,5 @@
 #FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu20.04
-FROM nvidia/cuda:11.7.1-cudnn8-devel-ubuntu20.04
+FROM nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04
 RUN apt-get update --yes --quiet && DEBIAN_FRONTEND=noninteractive apt-get install --yes --quiet --no-install-recommends \
     software-properties-common \
     build-essential apt-utils \
